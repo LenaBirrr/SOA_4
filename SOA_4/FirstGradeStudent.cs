@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SOA_4
 {
-    public class FirstGradeStudent:PrimarySchoolStudent
+    public class FirstGradeStudent:Student
     {
         public FirstGradeStudent(int studentId) : base(studentId)
         {
