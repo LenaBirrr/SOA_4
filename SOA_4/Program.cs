@@ -7,4 +7,17 @@ students.Add(new PrimarySchoolStudent(2));
 students.Add(new PrimarySchoolStudent(3));
 foreach (var student in students)
     student.TryHaveLunch(3);
-Console.WriteLine("Hello, World!");
+
+int feed = 0;
+foreach (var student in students)
+{
+    if (student.TryHaveLunch(3))
+        feed++;
+}
+
+if (students.Count != feed)
+{
+    Console.WriteLine($"Satisfied students:{feed}");
+    Console.WriteLine($"Fed students:{students.Count}");
+
+}
