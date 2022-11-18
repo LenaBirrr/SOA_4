@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace SOA_4
 {
-    public class FirstGradeStudent:Student
+    public class FirstGradeStudent:IStudent
     {
-        public FirstGradeStudent(int studentId) : base(studentId)
+        public FirstGradeStudent(int studentId)
         {
+            StudentId = studentId;
         }
 
-        public override bool TryHaveLunch(int numberOfBreak)
+        public int StudentId { get; set; }
+
+        public bool TryHaveLunch(int numberOfBreak)
         {
             if (numberOfBreak ==2)
             {

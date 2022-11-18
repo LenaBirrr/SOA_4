@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 
 namespace SOA_4
 {
-    public class PrimarySchoolStudent : IStudent
+    public interface IStudent
     {
-        public PrimarySchoolStudent(int studentId)
+        public int StudentId { get; set; }
+       /* public Student(int studentId)
         {
             StudentId = studentId;
-        }
-
-        public int StudentId { get; set ; }
-
-        public  bool TryHaveLunch(int numberOfBreak)
-        {
-            if (numberOfBreak > 2 && numberOfBreak < 5)
+        }*/
+        public bool TryHaveLunch(int numberOfBreak);
+       /* {
+            if(numberOfBreak>1&& numberOfBreak<5)
             {
                 Console.WriteLine(StudentId.ToString() + " had their lunch");
                 return true;
@@ -27,6 +25,6 @@ namespace SOA_4
                 Console.WriteLine(StudentId.ToString() + " was not able to have their lunch");
                 return false;
             }
-        }
+        }*/
     }
 }

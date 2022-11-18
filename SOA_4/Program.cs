@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using SOA_4;
 
-List<Student> students = new List<Student>();
+List<IStudent> students = new List<IStudent>();
 students.Add(new FirstGradeStudent(1));
 students.Add(new PrimarySchoolStudent(2));
 students.Add(new PrimarySchoolStudent(3));

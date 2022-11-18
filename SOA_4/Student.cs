@@ -13,18 +13,19 @@ namespace SOA_4
         {
             StudentId = studentId;
         }
-        public virtual bool TryHaveLunch(int numberOfBreak)
-        {
-            if(numberOfBreak>1&& numberOfBreak<5)
-            {
-                Console.WriteLine(StudentId.ToString() + " had their lunch");
-                return true;
-            }
-            else
-            {
-                Console.WriteLine(StudentId.ToString() + " was not able to have their lunch");
-                return false;
-            }
-        }
+        public bool TryHaveLunch(int numberOfBreak)
+         {
+             if(numberOfBreak>1&& numberOfBreak<5)
+             {
+                 Console.WriteLine(StudentId.ToString() + " had their lunch");
+                 return true;
+             }
+             else
+             {
+                 Console.WriteLine(StudentId.ToString() + " was not able to have their lunch");
+                 return false;
+             }
+         }
     }
 }
+
